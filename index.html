@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>True Care Insurance</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #FFFFFF;
+            color: #4A1D0D;
+        }
+        header {
+            background: #FFFFFF;
+            padding: 20px;
+            text-align: center;
+            color: #4A1D0D;
+            position: relative;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 15px;
+            background: #8B3A21;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        nav a:hover {
+            background: #4A1D0D;
+        }
+        .container {
+            padding: 40px;
+            text-align: center;
+        }
+        .slider {
+            width: 100%;
+            overflow: hidden;
+            position: relative;
+        }
+        .slides {
+            display: flex;
+            width: 300%;
+            transition: transform 0.5s ease-in-out;
+        }
+        .slides img {
+            width: 100%;
+            height: 70vh;
+            object-fit: cover;
+        }
+        .section {
+            padding: 40px;
+            text-align: center;
+            background: #f7f7f7;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        .service-cards {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 20px;
+        }
+        .service-card {
+            background: white;
+            padding: 20px;
+            width: 250px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        .testimonials {
+            background: #F4F4F4;
+            padding: 20px;
+            color: #4A1D0D;
+        }
+        .testimonial {
+            margin-bottom: 10px;
+            font-style: italic;
+        }
+        .contact-info {
+            text-align: center;
+            font-size: 18px;
+        }
+        footer {
+            background: #4A1D0D;
+            text-align: center;
+            padding: 10px;
+            color: white;
+        }
+        .whatsapp-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: #25D366;
+            padding: 10px;
+            border-radius: 50px;
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        .whatsapp-button img {
+            width: 24px;
+            margin-right: 8px;
+        }
+        .images {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 20px;
+        }
+        .images img {
+            width: 100%;
+            max-width: 300px; /* Adjust based on your design needs */
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="img/logo.png" alt="True Care Insurance Logo" width="150">
+    <h1>TRUE CARE INSURANCE</h1>
+    <p>Protecting Your Ride, Protecting Your Peace of Mind</p>
+</header>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#about">About Us</a>
+    <a href="#services">Services</a>
+    <a href="#testimonials">Testimonials</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<!--<div class="slider">-->
+<!--    <div class="slides">-->
+<!--        <img src="img/slide1.png" alt="Insurance Benefits">-->
+<!--        <img src="img/slide2.png" alt="Happy Clients">-->
+<!--        <img src="img/slide3.jpg" alt="Safe and Secure">-->
+<!--    </div>-->
+<!--</div>-->
+
+<div id="home" class="container"
+     style="display: flex; align-items: center; justify-content: space-between; text-align: left; background: linear-gradient(135deg, rgba(245, 240, 230, 0.9), rgba(220, 200, 180, 0.9)); padding: 20px 60px; border-radius: 0px; box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2); width: 100%; min-height: auto; margin: 0; overflow: hidden; box-sizing: border-box;">
+    <div style="max-width: 800px;">
+        <h2 style="color: #4A342E; font-size: 40px; font-weight: bold; text-shadow: 2px 2px 10px rgba(0,0,0,0.2);">
+            Welcome to True Care Insurance</h2>
+        <p style="color: #5A4636; font-size: 18px; line-height: 1.8;">Your trusted insurance partner for all vehicle and
+            health needs. We provide customized solutions to ensure that you and your assets are always protected. We
+            are dedicated to providing reliable and personalized insurance solutions tailored to your needs. Whether
+            you're looking for health, life, auto, or home insurance, our goal is to offer comprehensive coverage that
+            gives you peace of mind. At True Care Insurance, we prioritize customer satisfaction, transparency, and
+            affordability, ensuring that you receive the best protection for yourself and your loved ones. Let us help
+            you safeguard your future with policies designed to fit your unique requirements.</p>
+        <a href="#contact"
+           style="display: inline-block; margin-top: 20px; padding: 12px 24px; font-size: 18px; color: #4A342E; background: #F5F0E6; border-radius: 0px; text-decoration: none; font-weight: bold; transition: all 0.3s ease;">Get
+            a Quote</a>
+    </div>
+    <div class="image-section" style="margin-left: 40px;">
+        <img src="img/welcome.png" alt="Welcome to True Care Insurance"
+             style="width: 700px; border-radius: 0px; box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2); max-width: 100%; height: auto;">
+    </div>
+</div>
+
+<!-- SERVICES SECTION -->
+<div id="services" class="section">
+    <h2>Our Services</h2>
+    <div class="service-cards">
+        <div class="service-card">
+            <h3>Two-Wheeler Insurance</h3>
+            <p>Comprehensive protection for your bike or scooter.</p>
+        </div>
+        <div class="service-card">
+            <h3>Car Insurance</h3>
+            <p>Covering your vehicle against damage, theft, and third-party liabilities.</p>
+        </div>
+        <div class="service-card">
+            <h3>Commercial Vehicle Insurance</h3>
+            <p>Ensuring safety for your business vehicles.</p>
+        </div>
+        <div class="service-card">
+            <h3>Health Insurance</h3>
+            <p>Providing you with medical coverage when you need it most.</p>
+        </div>
+    </div>
+    <div class="images">
+        <img src="img/car_insurance.png" alt="Car Insurance">
+        <img src="img/business_insurance.png" alt="Business Insurance">
+        <img src="img/finance_insurance.png" alt="Finance Insurance">
+        <img src="img/health_insurance.png" alt="Health Insurance">
+    </div>
+</div>
+
+
+<div id="testimonials" class="container testimonials">
+    <h2>What Our Clients Say</h2>
+    <div class="testimonial">"True Care Insurance has been a lifesaver! Their car insurance saved me a huge expense when
+        I had an accident." - Rahul S.
+    </div>
+    <div class="testimonial">"Excellent customer service and very affordable health insurance plans." - Priya M.</div>
+    <div class="testimonial">"Highly recommend their term insurance plans for securing your family's future." - Ankit
+        K.
+    </div>
+</div>
+
+<!-- CONTACT SECTION -->
+<div id="contact" class="section">
+    <h2>Contact Us</h2>
+    <div class="contact-info">
+        <p><strong>Phone:</strong> +91-7428224450, +91-9810994450</p>
+        <p><strong>Address:</strong> 2083, Old Anaj Mandi, Opp. Maharaja Aggarsain Junior Wing, Narela, Delhi 110040</p>
+        <p><strong>Email:</strong> contact@truecareinsurance.in</p>
+    </div>
+</div>
+
+<!-- WHATSAPP BUTTON -->
+<a href="https://wa.me/7428224450" class="whatsapp-button" target="_blank">
+    <img src="img/whatsapp-icon.png" alt="WhatsApp"> Chat with Us
+</a>
+
+<footer>
+    <p>&copy; 2025 True Care Insurance. All rights reserved.</p>
+</footer>
+
+<script>
+    let slideIndex = 0;
+    function showSlides() {
+        const slides = document.querySelector('.slides');
+        slideIndex++;
+        if (slideIndex >= 3) slideIndex = 0;
+        slides.style.transform = `translateX(-${slideIndex * 100}%)`;
+    }
+    setInterval(showSlides, 3000);
+</script>
+
+</body>
+</html>
